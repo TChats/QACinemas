@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="https://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+<h:head>
+	<meta charset="ISO-8859-1" />
+	<link rel="stylesheet" type="text/css" href="css/styling.css" />
+	<h:outputStylesheet library="css" name="styling.css" />
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<title>NB Gardens</title>
+</h:head>
+<f:view>
+	<body>
+		<!-- This is the header -->
+		<div class="header">
+			<div id="navigation_top_row">
+
+				<div class="toplogo col-3 col-m-6">
+					<div class="logo">
+						<a href="index.xhtml"> <img src="img/logo6.png" /></a>
+					</div>
+				</div>
+				<div class="topsearch col-3 col-m-6">
+					<h:form class="tfnewsearch" method="get">
+						<h:inputText class="tftextinput" value=""
+							pt:placeholder="Search for an item..." />
+						<h:commandButton class="tfbutton" type="submit" action="#"
+							value="Search" />
+					</h:form>
+				</div>
+				<h:form id="basketlink">
+					<div id="navigation_cart_section" class="col-6">
+						<div class="loginheaders">
+							<h:commandLink action="#" value="Log In" />
+							<h:commandLink action="#" value="View Account" />
+							<h:commandLink action="#" value="Log Out" />
+						</div>
+						<div id="basket_logo">
+							<h:commandLink action="#" value="basket"
+								style="color:white; text-decoration:none">
+							</h:commandLink>
+						</div>
+					</div>
+				</h:form>
+			</div>
+			<h:form>
+				<nav>
+					<ul class="topnav">
+						<li><h:commandLink action="index" value="Home" /></li>
+						<li><h:commandLink action="index" value="Films" /></li>
+					</ul>
+				</nav>
+			</h:form>
+
+			<!-- This is the breadcrumb -->
+			<ul class="breadcrumb">
+				<li><a href="index.xhtml">Home</a></li>
+			</ul>
+		</div>
+
+		<div class="maincontent">
+			<ui:insert name="maincontent" />
+		</div>
+
+		<!-- This is the footer -->
+		<div class="footer">
+			<div>
+				<h:form>
+					<div class="footerlogo">
+						<a href="index.xhtml"> <img src="img/logo6.png" /></a>
+
+						<ul class="botnav">
+							<li><h:commandLink action="#" value="About Us" /></li>
+							<li><h:commandLink action="#" value="Customer Services" /></li>
+							<li><h:commandLink action="#" value="Contact Us" /></li>
+						</ul>
+					</div>
+				</h:form>
+			</div>
+		</div>
+
+	</body>
+</f:view>
+</html>

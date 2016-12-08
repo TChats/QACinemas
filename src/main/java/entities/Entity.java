@@ -1,8 +1,8 @@
 package entities;
 
-public class DefEnt {
+public class Entity {
 
-	public DefEnt() {
+	public Entity() {
 		// TODO Auto-generated constructor stub
 	}
 

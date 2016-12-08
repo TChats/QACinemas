@@ -1,8 +1,8 @@
 package controllers;
 
-public class DefCont {
+public class Entity {
 
-	public DefCont() {
+	public Entity() {
 		// TODO Auto-generated constructor stub
 	}
 

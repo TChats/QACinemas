@@ -1,8 +1,8 @@
 package services;
 
-public class DefServ {
+public class Entity {
 
-	public DefServ() {
+	public Entity() {
 		// TODO Auto-generated constructor stub
 	}
 
